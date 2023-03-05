@@ -1,0 +1,19 @@
+{
+    "name": "ryanxedi/git-info",
+    "description": "Access your local git branch information",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ryanxedi\\gitInfo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ryan Howard",
+            "email": "ryan@xedi.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
