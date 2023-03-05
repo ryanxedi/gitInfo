@@ -4,7 +4,7 @@ namespace ryanxedi\gitInfo;
 
 class gitInfo
 {
-    public static function base()
+    protected static function base()
     {
         if (is_dir(base_path() . '/.git')) {
             $base_path = base_path() . '/.git';

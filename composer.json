@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "ryanxedi\\gitInfo\\": "src/"
+            "ryanxedi\\gitInfo\\": "src/",
+            "ryanxedi\\gitInfo\\": "tests/"
         }
     },
     "authors": [
