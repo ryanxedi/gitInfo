@@ -5,8 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "ryanxedi\\gitInfo\\": "src/",
-            "ryanxedi\\gitInfo\\": "tests/"
+            "RyanXedi\\GitInfo\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RyanXedi\\GitInfo\\Tests\\": "tests"
         }
     },
     "authors": [
@@ -16,5 +20,21 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RyanXedi\\GitInfo\\GitInfoServiceProvider"
+            ],
+            "aliases": {
+                "GitInfo": "RyanXedi\\GitInfo\\Facades\\GitInfo"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
 }
