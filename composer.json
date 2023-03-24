@@ -1,5 +1,5 @@
 {
-    "name": "ryanxedi/git-info",
+    "name": "ryanxedi/gitInfo",
     "description": "Access your local git branch information",
     "type": "library",
     "license": "MIT",
