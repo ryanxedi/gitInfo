@@ -1,10 +1,20 @@
 <?php
 
-namespace ryanxedi\gitInfo;
+namespace RyanXedi\GitInfo;
 
-class gitInfo
+class GitInfo
 {
-    protected static function base()
+    public function branch(): string
+    {
+        return $this->base()['branch'];
+    }
+
+    public function hash(): string
+    {
+        return $this->base()['hash'];
+    }
+
+    protected function base(): array
     {
         if (is_dir(base_path() . '/.git')) {
             $base_path = base_path() . '/.git';
@@ -29,15 +39,5 @@ class gitInfo
                 'hash' => '.git folder not found',
             ]);
         }
-    }
-
-    public static function branch()
-    {
-        return SELF::base()['branch'];
-    }
-
-    public static function hash()
-    {
-        return SELF::base()['hash'];
     }
 }
